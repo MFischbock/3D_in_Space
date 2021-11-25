@@ -15,12 +15,9 @@
       embedded
       arjs="sourceType: webcam; debugUIEnabled: false;"
     >
-    <a-assets>
-      <a-asset-item id="tree" response-type="arraybuffer" src="/buster_drone/untitled.glb"></a-asset-item>
-    </a-assets>
-    <!-- use your gltf model -->
-    <a-entity gltf-model="#tree" scale="1 1 1"></a-entity>
-      <a-marker-camera preset='hiro'></a-marker-camera>
+
+    <a-entity fbx-model="src:/buster_drone/untitled.fbx;"></a-entity>
+
     </a-scene>
   </body>
 </html>
