@@ -15,8 +15,12 @@
       embedded
       arjs="sourceType: webcam; debugUIEnabled: false;"
     >
-<a-text value="Hello, World!"></a-text>
-    <a-entity fbx-model="src:/buster_drone/untitled.fbx;"></a-entity>
+
+    <a-assets>
+      <a-asset-item id="tree" src="/buster_drone/untitled.fbx"></a-asset-item>
+    </a-assets>
+    <!-- use your gltf model -->
+    <a-entity fbx-model="#tree"></a-entity>
     <a-marker-camera preset='hiro'></a-marker-camera>
     </a-scene>
   </body>
